@@ -3,6 +3,10 @@
 	--play-button-color: #E79AB6;
 }
 
+*{
+	touch-action: manipulation;
+}	
+	
 body {
 	background: var(--background-color);
 	text-align: center;
