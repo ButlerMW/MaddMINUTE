@@ -1,61 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MaddMINUTE</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="MaddMinuteLogo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaddMINUTE</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="MaddMinuteLogo.png">
 </head>
 <body>
-    <h1>MaddMINUTE</h1>
-    <div id="intro">
-        <p>
-            Spend just a positive minute solveing basic addition math problems.
-            See how many you can solve before time runs out. 
-        </p>
-        <p>
-            Click or key in the numbers to solve the equations. If you need to clear 
-            out your answers either click on the 'c' button or press 'Backspace'.
-        </p>
-        <button id="start" class="play-button">start</button>
+  <h1>MaddMINUTE</h1>
+  <div id="intro">
+    <p>
+      Spend just a positive minute solveing basic addition math problems.
+      See how many you can solve before time runs out. 
+    </p>
+    <p>
+      Click or key in the numbers to solve the equations. If you need to clear 
+      out your answers either click on the 'c' button or press 'Backspace'.
+    </p>
+    <button id="start" class="play-button">start</button>
+  </div>
+    
+  <div id="equation-container" style="display: none;">
+    <h1>Timer: <span id="timer-display"></span></h1>
+    <label class="equation"><span id="number1"></span> + <span id="number2"></span> =</label>
+    <input type="number" id="answer" disabled/>
+    
+    <div>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
     </div>
     
-    <div id="equation-container" style="display: none;">
-        <h1>Timer: <span id="timer-display"></span></h1>
-        <label class="equation"><span id="number1"></span> + <span id="number2"></span> =</label>
-        <input type="number" id="answer" disabled/>
-        
-        <div>
-            <button class="btn">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-        </div>
-        
-        <div>
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-        </div>
-        
-        <div>
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
-        </div>
-        
-        <div>
-            <button class="btn" disabled>-</button>
-            <button class="btn">0</button>
-            <button class="btn">c</button>
-        </div>
+    <div>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
     </div>
     
-    <div id="result" style="display: none;">
-        <h1>Game Over</h1>
-        <p>Your score is: <span id="counter"></span></p>
-        <button id="restart" class="play-button">Play Again?</button>
+    <div>
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
     </div>
-    <script src="index.js"></script>
+    
+    <div>
+        <button class="btn" disabled>-</button>
+        <button class="btn">0</button>
+        <button class="btn">c</button>
+    </div>
+  </div>
+    
+  <div id="result" style="display: none;">
+    <h1>Game Over</h1>
+    <p>Your score is: <span id="scoreboard"></span></p>
+    <button id="restart" class="play-button">Play Again?</button>
+  </div>
+  <script src="index.js"></script>
 </body>
 </html>
